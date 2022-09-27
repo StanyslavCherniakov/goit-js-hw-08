@@ -15,6 +15,6 @@ function playedTime(data) {
 function setCurrentTime() {
   const savedTimeToPlay = localStorage.getItem('videoplayer-current-time');
   if (savedTimeToPlay) {
-    player.setCurrentTime(localStorage.getItem('videoplayer-current-time'));
+    player.setCurrentTime(savedTimeToPlay);
   }
 }
